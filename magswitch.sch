@@ -1,0 +1,198 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D_Schottky D?
+U 1 1 606820FA
+P 6650 4450
+F 0 "D?" V 6604 4530 50  0000 L CNN
+F 1 "D_Schottky" V 6695 4530 50  0000 L CNN
+F 2 "" H 6650 4450 50  0001 C CNN
+F 3 "~" H 6650 4450 50  0001 C CNN
+	1    6650 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60682879
+P 6650 4750
+F 0 "#PWR?" H 6650 4500 50  0001 C CNN
+F 1 "GND" H 6655 4577 50  0000 C CNN
+F 2 "" H 6650 4750 50  0001 C CNN
+F 3 "" H 6650 4750 50  0001 C CNN
+	1    6650 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4600 6650 4750
+$Comp
+L power:GND #PWR?
+U 1 1 60682A78
+P 2000 5000
+F 0 "#PWR?" H 2000 4750 50  0001 C CNN
+F 1 "GND" H 2005 4827 50  0000 C CNN
+F 2 "" H 2000 5000 50  0001 C CNN
+F 3 "" H 2000 5000 50  0001 C CNN
+	1    2000 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 606834DB
+P 2000 4650
+F 0 "D?" V 2039 4532 50  0000 R CNN
+F 1 "LED" V 1948 4532 50  0000 R CNN
+F 2 "" H 2000 4650 50  0001 C CNN
+F 3 "~" H 2000 4650 50  0001 C CNN
+	1    2000 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2000 4800 2000 5000
+$Comp
+L Device:R_US R?
+U 1 1 60683D1F
+P 2000 4150
+F 0 "R?" H 2068 4196 50  0000 L CNN
+F 1 "R_US" H 2068 4105 50  0000 L CNN
+F 2 "" V 2040 4140 50  0001 C CNN
+F 3 "~" H 2000 4150 50  0001 C CNN
+	1    2000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4300 2000 4500
+Wire Wire Line
+	2000 3700 2000 4000
+Wire Wire Line
+	2000 3700 1750 3700
+Text Label 1750 3700 2    50   ~ 0
+Out
+$Comp
+L Regulator_Linear:MIC5205-2.7YM5 U?
+U 1 1 60684A5D
+P 5850 4300
+F 0 "U?" H 5850 4642 50  0000 C CNN
+F 1 "MIC5205-2.7YM5" H 5850 4551 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5850 4625 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005785A.pdf" H 5850 4300 50  0001 C CNN
+	1    5850 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60685F65
+P 5850 4750
+F 0 "#PWR?" H 5850 4500 50  0001 C CNN
+F 1 "GND" H 5855 4577 50  0000 C CNN
+F 2 "" H 5850 4750 50  0001 C CNN
+F 3 "" H 5850 4750 50  0001 C CNN
+	1    5850 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4600 5850 4750
+Wire Wire Line
+	7000 3700 6650 3700
+Wire Wire Line
+	5400 3700 5400 4200
+Wire Wire Line
+	5400 4200 5550 4200
+Wire Wire Line
+	5400 4200 5400 4300
+Wire Wire Line
+	5400 4300 5550 4300
+Connection ~ 5400 4200
+Text Label 7000 3700 0    50   ~ 0
+IN
+NoConn ~ 6150 4300
+$Comp
+L Device:C C?
+U 1 1 60687A23
+P 5400 4600
+F 0 "C?" H 5515 4646 50  0000 L CNN
+F 1 "C" H 5515 4555 50  0000 L CNN
+F 2 "" H 5438 4450 50  0001 C CNN
+F 3 "~" H 5400 4600 50  0001 C CNN
+	1    5400 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4300 5400 4450
+Connection ~ 5400 4300
+$Comp
+L power:GND #PWR?
+U 1 1 60688048
+P 5400 4750
+F 0 "#PWR?" H 5400 4500 50  0001 C CNN
+F 1 "GND" H 5405 4577 50  0000 C CNN
+F 2 "" H 5400 4750 50  0001 C CNN
+F 3 "" H 5400 4750 50  0001 C CNN
+	1    5400 4750
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6650 3750 6650 4300
+Text Notes 6700 4050 0    50   ~ 0
+???
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 606890C9
+P 6650 3600
+F 0 "H?" H 6750 3649 50  0000 L CNN
+F 1 "MountingHole_Pad" H 6750 3558 50  0000 L CNN
+F 2 "" H 6650 3600 50  0001 C CNN
+F 3 "~" H 6650 3600 50  0001 C CNN
+	1    6650 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 3700
+Wire Wire Line
+	6650 3700 5400 3700
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 60689618
+P 2000 3600
+F 0 "H?" H 2100 3649 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2100 3558 50  0000 L CNN
+F 2 "" H 2000 3600 50  0001 C CNN
+F 3 "~" H 2000 3600 50  0001 C CNN
+	1    2000 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 3700
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 6068A0D4
+P 2950 5500
+F 0 "H?" H 3050 5549 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3050 5458 50  0000 L CNN
+F 2 "" H 2950 5500 50  0001 C CNN
+F 3 "~" H 2950 5500 50  0001 C CNN
+	1    2950 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6068A5B7
+P 2950 5600
+F 0 "#PWR?" H 2950 5350 50  0001 C CNN
+F 1 "GND" H 2955 5427 50  0000 C CNN
+F 2 "" H 2950 5600 50  0001 C CNN
+F 3 "" H 2950 5600 50  0001 C CNN
+	1    2950 5600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
