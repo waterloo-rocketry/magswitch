@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name magswitch)(type KiCad)(uri ${KIPRJMOD}/magswitch.pretty)(options "")(descr ""))
+)

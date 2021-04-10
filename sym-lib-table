@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name magswitch)(type Legacy)(uri ${KIPRJMOD}/magswitch.lib)(options "")(descr ""))
+)
