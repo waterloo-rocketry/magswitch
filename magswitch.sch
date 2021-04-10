@@ -53,7 +53,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 3550 2000 3700
 Text Label 1750 3700 2    50   ~ 0
-Out
+OUT
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 606890C9
