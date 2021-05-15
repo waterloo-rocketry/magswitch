@@ -31,7 +31,7 @@ P 2000 4650
 F 0 "D1" V 2039 4532 50  0000 R CNN
 F 1 "LED" V 1948 4532 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2000 4650 50  0001 C CNN
-F 3 "~" H 2000 4650 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/150060YS75000/4489909" H 2000 4650 50  0001 C CNN
 	1    2000 4650
 	0    -1   -1   0   
 $EndComp
@@ -42,7 +42,7 @@ L Device:R_US R1
 U 1 1 60683D1F
 P 2000 4150
 F 0 "R1" H 2068 4196 50  0000 L CNN
-F 1 "R_US" H 2068 4105 50  0000 L CNN
+F 1 "1.3k" H 2068 4105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2040 4140 50  0001 C CNN
 F 3 "~" H 2000 4150 50  0001 C CNN
 	1    2000 4150
@@ -125,9 +125,9 @@ L Device:Q_PMOS_GDS Q2
 U 1 1 606908AF
 P 8400 2550
 F 0 "Q2" H 8605 2504 50  0000 L CNN
-F 1 "Q_PMOS_GDS" H 8605 2595 50  0000 L CNN
+F 1 "SI4143DY-T1-GE3" H 8605 2595 50  0000 L CNN
 F 2 "magswitch:SOIC-8_MOSFET" H 8600 2650 50  0001 C CNN
-F 3 "" H 8400 2550 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/vishay-siliconix/SI4143DY-T1-GE3/6834464" H 8400 2550 50  0001 C CNN
 	1    8400 2550
 	1    0    0    1   
 $EndComp
@@ -319,4 +319,8 @@ Wire Wire Line
 Connection ~ 2000 3700
 Wire Wire Line
 	2000 3700 2000 4000
+Text Notes 2450 2150 0    50   Italic 0
+Max 16V
+Text Notes 2350 4300 0    50   Italic 0
+16V - 2V = 14V max\n10mA at 14V\nR = 14V/10mA\nR = 1.4K -> 1.3K\n
 $EndSCHEMATC
